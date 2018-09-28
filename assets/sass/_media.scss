@@ -1,0 +1,50 @@
+
+
+// cellphone size
+@media only screen and (max-width: 591px) {
+
+  .brand-logo{
+    font-size: 16px !important;
+  }
+  .greybox{
+        width: 60% !important;
+      .sub-title{
+        font-size: 2em!important;
+      }
+  }
+
+  .whitebox{
+    p{
+      font-size: 100% !important;
+    }
+  }
+
+  #card-section{
+    .heading-button{
+      padding-bottom: 20px !important;
+    }
+  }
+
+  #sermon-section {
+    .sermon-heading{
+      margin-right: 0;
+      width: 350px;
+    }
+    .sermon-body{
+      margin-right: 0;
+      width: 400px;
+      padding-bottom: 44px;
+    
+    }
+
+    .btn-black{
+
+
+    }
+
+}
+
+.sermon-image{
+  display: none;
+}
+}
