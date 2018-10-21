@@ -9,16 +9,35 @@ webpackJsonp([0],{
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.HomeSection = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(8);
+var _react = __webpack_require__(7);
 
 var _react2 = _interopRequireDefault(_react);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _SermonSection = __webpack_require__(108);
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+var _SermonSection2 = _interopRequireDefault(_SermonSection);
+
+var _CardSection = __webpack_require__(105);
+
+var _CardSection2 = _interopRequireDefault(_CardSection);
+
+var _Ministries = __webpack_require__(107);
+
+var _Ministries2 = _interopRequireDefault(_Ministries);
+
+var _SixtySeconds = __webpack_require__(109);
+
+var _SixtySeconds2 = _interopRequireDefault(_SixtySeconds);
+
+var _Events = __webpack_require__(106);
+
+var _Events2 = _interopRequireDefault(_Events);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -26,184 +45,102 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Navbar = function (_Component) {
-  _inherits(Navbar, _Component);
+var HomeSection = exports.HomeSection = function (_Component) {
+  _inherits(HomeSection, _Component);
 
-  function Navbar() {
-    _classCallCheck(this, Navbar);
+  function HomeSection() {
+    _classCallCheck(this, HomeSection);
 
-    return _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (HomeSection.__proto__ || Object.getPrototypeOf(HomeSection)).apply(this, arguments));
   }
 
-  _createClass(Navbar, [{
+  _createClass(HomeSection, [{
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
         'div',
         null,
         _react2.default.createElement(
-          'nav',
-          null,
+          'section',
+          { id: 'why-pbc' },
           _react2.default.createElement(
             'div',
-            { className: 'nav-wrapper grey darken-3' },
+            { className: 'greybox' },
             _react2.default.createElement(
-              'a',
-              { href: '#', className: 'brand-logo' },
-              ' Pocatello Baptist Church '
-            ),
+              'h5',
+              { className: 'sub-title' },
+              ' why pocatello  baptist '
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'whitebox' },
             _react2.default.createElement(
-              'a',
-              _defineProperty({ href: '#', 'data-target': 'mobile-demo', className: 'sidenav-trigger' }, 'data-target', 'mobile-links'),
-              ' ',
-              _react2.default.createElement(
-                'i',
-                { className: 'material-icons' },
-                ' menu '
-              )
-            ),
-            _react2.default.createElement(
-              'ul',
-              { className: 'right hide-on-med-and-down' },
-              _react2.default.createElement(
-                'li',
-                null,
-                ' ',
-                _react2.default.createElement(
-                  'a',
-                  { href: 'sass.html' },
-                  ' Home '
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                ' ',
-                _react2.default.createElement(
-                  'a',
-                  { href: 'about.html' },
-                  ' About us '
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                ' ',
-                _react2.default.createElement(
-                  'a',
-                  { href: 'collapsible.html' },
-                  ' Pastors Blog '
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                ' ',
-                _react2.default.createElement(
-                  'a',
-                  { href: 'mobile.html' },
-                  ' 60 Seconds '
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                ' ',
-                _react2.default.createElement(
-                  'a',
-                  { href: 'mobile.html' },
-                  ' Mission '
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                ' ',
-                _react2.default.createElement(
-                  'a',
-                  { href: 'mobile.html' },
-                  ' Contact us '
-                )
-              )
+              'p',
+              null,
+              'Pocatello Baptist Church is a fundamental Independent, Baptist curch that exist to be a sanctuary where God is worshipped, a body where his Word is obeyed, a family where his disciples fellowship and a mission where sinners are converted '
             )
           )
         ),
-        _react2.default.createElement(
-          'ul',
-          { className: 'sidenav', id: 'mobile-links' },
-          _react2.default.createElement(
-            'li',
-            null,
-            ' ',
-            _react2.default.createElement(
-              'a',
-              { href: 'sass.html' },
-              ' Home '
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            null,
-            ' ',
-            _react2.default.createElement(
-              'a',
-              { href: 'about.html' },
-              ' About us '
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            null,
-            ' ',
-            _react2.default.createElement(
-              'a',
-              { href: 'collapsible.html' },
-              ' Pastors Blog '
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            null,
-            ' ',
-            _react2.default.createElement(
-              'a',
-              { href: 'mobile.html' },
-              ' 60 Seconds '
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            null,
-            ' ',
-            _react2.default.createElement(
-              'a',
-              { href: 'mobile.html' },
-              ' Mission '
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            null,
-            ' ',
-            _react2.default.createElement(
-              'a',
-              { href: 'mobile.html' },
-              ' Contact us '
-            )
-          )
-        )
+        _react2.default.createElement(_CardSection2.default, null),
+        _react2.default.createElement(_SermonSection2.default, null),
+        _react2.default.createElement(_Ministries2.default, null),
+        _react2.default.createElement(_SixtySeconds2.default, null),
+        _react2.default.createElement(_Events2.default, null)
       );
     }
   }]);
 
-  return Navbar;
+  return HomeSection;
 }(_react.Component);
 
-exports.default = Navbar;
+exports.default = HomeSection;
 
 /***/ }),
 
-/***/ 102:
+/***/ 101:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(7);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Footer = __webpack_require__(54);
+
+var _Footer2 = _interopRequireDefault(_Footer);
+
+var _Navbar = __webpack_require__(55);
+
+var _Navbar2 = _interopRequireDefault(_Navbar);
+
+var _DocHero = __webpack_require__(104);
+
+var _DocHero2 = _interopRequireDefault(_DocHero);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Doctrinal = function Doctrinal() {
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(_Navbar2.default, null),
+    _react2.default.createElement(_DocHero2.default, null),
+    _react2.default.createElement(_Footer2.default, null)
+  );
+};
+
+exports.default = Doctrinal;
+
+/***/ }),
+
+/***/ 103:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -211,7 +148,7 @@ exports.default = Navbar;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(8);
+var _react = __webpack_require__(7);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -219,21 +156,25 @@ var _reactDom = __webpack_require__(33);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _HomeSection = __webpack_require__(99);
+var _HomeSection = __webpack_require__(100);
 
 var _HomeSection2 = _interopRequireDefault(_HomeSection);
 
-var _Header = __webpack_require__(97);
+var _Header = __webpack_require__(99);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _Navbar = __webpack_require__(100);
+var _Navbar = __webpack_require__(55);
 
 var _Navbar2 = _interopRequireDefault(_Navbar);
 
-var _Footer = __webpack_require__(98);
+var _Footer = __webpack_require__(54);
 
 var _Footer2 = _interopRequireDefault(_Footer);
+
+var _Doctrinal = __webpack_require__(101);
+
+var _Doctrinal2 = _interopRequireDefault(_Doctrinal);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -261,7 +202,8 @@ var Layout = function (_Component) {
         _react2.default.createElement(_Navbar2.default, null),
         _react2.default.createElement(_Header2.default, null),
         _react2.default.createElement(_HomeSection2.default, null),
-        _react2.default.createElement(_Footer2.default, null)
+        _react2.default.createElement(_Footer2.default, null),
+        _react2.default.createElement(_Doctrinal2.default, null)
       );
     }
   }]);
@@ -275,20 +217,69 @@ _reactDom2.default.render(_react2.default.createElement(Layout, null), app);
 
 /***/ }),
 
-/***/ 103:
+/***/ 104:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
+});
+
+var _react = __webpack_require__(7);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var DocHero = function DocHero() {
+  return _react2.default.createElement(
+    "div",
+    null,
+    _react2.default.createElement(
+      "section",
+      { id: "DocHero" },
+      _react2.default.createElement(
+        "div",
+        { className: "header-title" },
+        _react2.default.createElement(
+          "h1",
+          null,
+          "PBC Doctrinal Statement"
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "subtitle" },
+          _react2.default.createElement(
+            "h3",
+            null,
+            "What we Believe"
+          )
+        )
+      )
+    )
+  );
+};
+
+exports.default = DocHero;
+
+/***/ }),
+
+/***/ 105:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
 exports.CardSection = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(8);
+var _react = __webpack_require__(7);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -301,152 +292,152 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var CardSection = exports.CardSection = function (_Component) {
-    _inherits(CardSection, _Component);
+  _inherits(CardSection, _Component);
 
-    function CardSection() {
-        _classCallCheck(this, CardSection);
+  function CardSection() {
+    _classCallCheck(this, CardSection);
 
-        return _possibleConstructorReturn(this, (CardSection.__proto__ || Object.getPrototypeOf(CardSection)).apply(this, arguments));
-    }
+    return _possibleConstructorReturn(this, (CardSection.__proto__ || Object.getPrototypeOf(CardSection)).apply(this, arguments));
+  }
 
-    _createClass(CardSection, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'div',
-                null,
+  _createClass(CardSection, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "div",
+        null,
+        _react2.default.createElement(
+          "section",
+          { id: "card-section", className: "center" },
+          _react2.default.createElement(
+            "div",
+            { className: "row" },
+            _react2.default.createElement(
+              "div",
+              { className: "container" },
+              _react2.default.createElement(
+                "div",
+                { className: "col s12 m4" },
                 _react2.default.createElement(
-                    'section',
-                    { id: 'card-section', className: 'center' },
+                  "div",
+                  { className: "icon" },
+                  _react2.default.createElement("i", { className: "fas fa-bible " })
+                ),
+                _react2.default.createElement(
+                  "div",
+                  { className: "heading-title" },
+                  _react2.default.createElement(
+                    "h6",
+                    { className: "heading-title-h6" },
+                    "What we believe"
+                  ),
+                  _react2.default.createElement(
+                    "div",
+                    { className: "heading-title-content" },
                     _react2.default.createElement(
-                        'div',
-                        { className: 'row' },
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'container' },
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'col s12 m4' },
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'icon' },
-                                    _react2.default.createElement('i', { className: 'fas fa-bible ' })
-                                ),
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'heading-title' },
-                                    _react2.default.createElement(
-                                        'h6',
-                                        { className: 'heading-title-h6' },
-                                        'What we believe'
-                                    ),
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'heading-title-content' },
-                                        _react2.default.createElement(
-                                            'p',
-                                            null,
-                                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores cupiditate earum mollitia ipsa ad possimus perferendis sequi, similique voluptate rem.'
-                                        )
-                                    ),
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'heading-button' },
-                                        _react2.default.createElement(
-                                            'a',
-                                            { href: '#', className: ' btn-red ' },
-                                            'Learn More'
-                                        )
-                                    )
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'col s12 m4' },
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'icon' },
-                                    _react2.default.createElement('i', { className: 'fas fa-globe-asia' })
-                                ),
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'heading-title' },
-                                    _react2.default.createElement(
-                                        'h6',
-                                        { className: 'heading-title-h6' },
-                                        'Our Missionaries'
-                                    ),
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'heading-title-content' },
-                                        _react2.default.createElement(
-                                            'p',
-                                            null,
-                                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores cupiditate earum mollitia ipsa ad possimus perferendis sequi, similique voluptate rem.'
-                                        )
-                                    ),
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'heading-button' },
-                                        _react2.default.createElement(
-                                            'a',
-                                            { href: '#', className: 'btn-red' },
-                                            'Learn More'
-                                        )
-                                    )
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'col s12 m4 ' },
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'icon' },
-                                    _react2.default.createElement('i', { className: 'fas fa-podcast' })
-                                ),
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'heading-title' },
-                                    _react2.default.createElement(
-                                        'h6',
-                                        { className: 'heading-title-h6' },
-                                        'Our Podcast'
-                                    ),
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'heading-title-content ' },
-                                        _react2.default.createElement(
-                                            'p',
-                                            null,
-                                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores cupiditate earum mollitia ipsa ad possimus perferendis sequi, similique voluptate rem.'
-                                        )
-                                    ),
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'heading-button' },
-                                        _react2.default.createElement(
-                                            'a',
-                                            { href: '#', className: 'btn-red' },
-                                            'Learn More'
-                                        )
-                                    )
-                                )
-                            )
-                        )
+                      "p",
+                      null,
+                      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores cupiditate earum mollitia ipsa ad possimus perferendis sequi, similique voluptate rem."
                     )
+                  ),
+                  _react2.default.createElement(
+                    "div",
+                    { className: "heading-button" },
+                    _react2.default.createElement(
+                      "a",
+                      { href: "#", className: " btn-red " },
+                      "Learn More"
+                    )
+                  )
                 )
-            );
-        }
-    }]);
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "col s12 m4" },
+                _react2.default.createElement(
+                  "div",
+                  { className: "icon" },
+                  _react2.default.createElement("i", { className: "fas fa-globe-asia" })
+                ),
+                _react2.default.createElement(
+                  "div",
+                  { className: "heading-title" },
+                  _react2.default.createElement(
+                    "h6",
+                    { className: "heading-title-h6" },
+                    "Our Missionaries"
+                  ),
+                  _react2.default.createElement(
+                    "div",
+                    { className: "heading-title-content" },
+                    _react2.default.createElement(
+                      "p",
+                      null,
+                      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores cupiditate earum mollitia ipsa ad possimus perferendis sequi, similique voluptate rem."
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "div",
+                    { className: "heading-button" },
+                    _react2.default.createElement(
+                      "a",
+                      { href: "#", className: "btn-red" },
+                      "Learn More"
+                    )
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "col s12 m4 " },
+                _react2.default.createElement(
+                  "div",
+                  { className: "icon" },
+                  _react2.default.createElement("i", { className: "fas fa-podcast" })
+                ),
+                _react2.default.createElement(
+                  "div",
+                  { className: "heading-title" },
+                  _react2.default.createElement(
+                    "h6",
+                    { className: "heading-title-h6" },
+                    "Our Podcast"
+                  ),
+                  _react2.default.createElement(
+                    "div",
+                    { className: "heading-title-content " },
+                    _react2.default.createElement(
+                      "p",
+                      null,
+                      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores cupiditate earum mollitia ipsa ad possimus perferendis sequi, similique voluptate rem."
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "div",
+                    { className: "heading-button" },
+                    _react2.default.createElement(
+                      "a",
+                      { href: "#", className: "btn-red" },
+                      "Learn More"
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
 
-    return CardSection;
+  return CardSection;
 }(_react.Component);
 
 exports.default = CardSection;
 
 /***/ }),
 
-/***/ 104:
+/***/ 106:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -459,7 +450,7 @@ exports.Events = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(8);
+var _react = __webpack_require__(7);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -699,7 +690,7 @@ exports.default = Events;
 
 /***/ }),
 
-/***/ 105:
+/***/ 107:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -712,7 +703,7 @@ exports.Ministries = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(8);
+var _react = __webpack_require__(7);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -734,110 +725,110 @@ var Ministries = exports.Ministries = function (_Component) {
   }
 
   _createClass(Ministries, [{
-    key: "render",
+    key: 'render',
     value: function render() {
       return _react2.default.createElement(
-        "div",
+        'div',
         null,
         _react2.default.createElement(
-          "section",
-          { id: "main-content" },
+          'section',
+          { id: 'main-content' },
           _react2.default.createElement(
-            "div",
-            { className: "container" },
+            'div',
+            { className: 'container' },
             _react2.default.createElement(
-              "div",
-              { className: "row" },
+              'div',
+              { className: 'row' },
               _react2.default.createElement(
-                "div",
-                { className: " col s12 m6" },
+                'div',
+                { className: ' col s12 m6' },
                 _react2.default.createElement(
-                  "div",
-                  { className: "image-main-content" },
-                  _react2.default.createElement("img", {
-                    src: " https://images.pexels.com/photos/461049/pexels-photo-461049.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-                    alt: ""
+                  'div',
+                  { className: 'image-main-content' },
+                  _react2.default.createElement('img', {
+                    src: ' https://images.pexels.com/photos/461049/pexels-photo-461049.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+                    alt: ''
                   })
                 )
               ),
               _react2.default.createElement(
-                "div",
-                { className: "col s12 m6" },
+                'div',
+                { className: 'col s12 m6' },
                 _react2.default.createElement(
-                  "div",
-                  { className: "ministries-heading" },
+                  'div',
+                  { className: 'ministries-heading' },
                   _react2.default.createElement(
-                    "h5",
+                    'h5',
                     null,
-                    " Uncover our ministries"
+                    ' Uncover our ministries'
                   ),
                   _react2.default.createElement(
-                    "p",
+                    'p',
                     null,
-                    "Pocatello baptist church has minisitry opportunities for all ages. Please click below for detailed information about the different minstries we support."
+                    'Pocatello baptist church has minisitry opportunities for all ages. Please click below for detailed information about the different minstries we support.'
                   )
                 ),
                 _react2.default.createElement(
-                  "div",
-                  { className: "ministries-list" },
+                  'div',
+                  { className: 'ministries-list' },
                   _react2.default.createElement(
-                    "ul",
+                    'ul',
                     null,
                     _react2.default.createElement(
-                      "h5",
+                      'h5',
                       null,
-                      "List of our Ministries"
+                      'List of our Ministries'
                     ),
                     _react2.default.createElement(
-                      "li",
+                      'li',
                       null,
-                      "Set Free Teens"
+                      'Set Free Teens'
                     ),
                     _react2.default.createElement(
-                      "li",
+                      'li',
                       null,
-                      "Pre-Teen "
+                      'Pre-Teen '
                     ),
                     _react2.default.createElement(
-                      "li",
+                      'li',
                       null,
-                      "Peewee patch club"
+                      'Peewee patch club'
                     ),
                     _react2.default.createElement(
-                      "li",
+                      'li',
                       null,
-                      "Soul Sister"
+                      'Soul Sister'
                     ),
                     _react2.default.createElement(
-                      "li",
+                      'li',
                       null,
-                      "Sitched together"
+                      'Sitched together'
                     ),
                     _react2.default.createElement(
-                      "li",
+                      'li',
                       null,
-                      "Mens Bible Study"
+                      'Mens Bible Study'
                     ),
                     _react2.default.createElement(
-                      "li",
+                      'li',
                       null,
-                      "Womens Bible Study"
+                      'Womens Bible Study'
                     ),
                     _react2.default.createElement(
-                      "li",
+                      'li',
                       null,
-                      "Celebrate Recovery"
+                      'Celebrate Recovery'
                     )
                   )
                 ),
                 _react2.default.createElement(
-                  "div",
-                  { className: "image-main-button" },
+                  'div',
+                  { className: 'image-main-button' },
                   _react2.default.createElement(
-                    "a",
-                    { href: "ministries.html", className: "btn-red" },
-                    "View Ministries ",
-                    _react2.default.createElement("i", { className: "fas fa-chevron-right" })
+                    'a',
+                    { href: 'ministries.html', className: 'btn-red' },
+                    'View Ministries ',
+                    _react2.default.createElement('i', { className: 'fas fa-chevron-right' })
                   )
                 )
               )
@@ -855,7 +846,7 @@ exports.default = Ministries;
 
 /***/ }),
 
-/***/ 106:
+/***/ 108:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -868,7 +859,7 @@ exports.SermonSection = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(8);
+var _react = __webpack_require__(7);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -970,20 +961,20 @@ exports.default = SermonSection;
 
 /***/ }),
 
-/***/ 107:
+/***/ 109:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 exports.SixtySeconds = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(8);
+var _react = __webpack_require__(7);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -996,104 +987,15 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var SixtySeconds = exports.SixtySeconds = function (_Component) {
-    _inherits(SixtySeconds, _Component);
+  _inherits(SixtySeconds, _Component);
 
-    function SixtySeconds() {
-        _classCallCheck(this, SixtySeconds);
+  function SixtySeconds() {
+    _classCallCheck(this, SixtySeconds);
 
-        return _possibleConstructorReturn(this, (SixtySeconds.__proto__ || Object.getPrototypeOf(SixtySeconds)).apply(this, arguments));
-    }
-
-    _createClass(SixtySeconds, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement(
-                    'section',
-                    { id: 'sixty-seconds' },
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'container' },
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'row' },
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'col s12' },
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'sixty-seconds-heading' },
-                                    _react2.default.createElement(
-                                        'h4',
-                                        null,
-                                        '60 Seconds to make a life changing decision:'
-                                    ),
-                                    _react2.default.createElement(
-                                        'span',
-                                        null,
-                                        'Are you sure?'
-                                    )
-                                ),
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'sixty-second-button' },
-                                    _react2.default.createElement(
-                                        'a',
-                                        { href: '#', 'class': 'btn-white' },
-                                        'Find out more'
-                                    )
-                                )
-                            )
-                        )
-                    )
-                )
-            );
-        }
-    }]);
-
-    return SixtySeconds;
-}(_react.Component);
-
-exports.default = SixtySeconds;
-
-/***/ }),
-
-/***/ 97:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(8);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Header = function (_Component) {
-  _inherits(Header, _Component);
-
-  function Header() {
-    _classCallCheck(this, Header);
-
-    return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (SixtySeconds.__proto__ || Object.getPrototypeOf(SixtySeconds)).apply(this, arguments));
   }
 
-  _createClass(Header, [{
+  _createClass(SixtySeconds, [{
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
@@ -1101,22 +1003,39 @@ var Header = function (_Component) {
         null,
         _react2.default.createElement(
           'section',
-          { id: 'header-image' },
+          { id: 'sixty-seconds' },
           _react2.default.createElement(
             'div',
-            { className: 'header-title' },
-            _react2.default.createElement(
-              'h1',
-              { className: 'header-h1' },
-              ' Welcome to Pocatello Baptist Church'
-            ),
+            { className: 'container' },
             _react2.default.createElement(
               'div',
-              { className: 'header-subtitle' },
+              { className: 'row' },
               _react2.default.createElement(
-                'a',
-                { className: 'waves-effect waves-light red darken-4 btn-large' },
-                ' Are you searching? '
+                'div',
+                { className: 'col s12' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'sixty-seconds-heading' },
+                  _react2.default.createElement(
+                    'h4',
+                    null,
+                    '60 Seconds to make a life changing decision:'
+                  ),
+                  _react2.default.createElement(
+                    'span',
+                    null,
+                    'Are you sure?'
+                  )
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'sixty-second-button' },
+                  _react2.default.createElement(
+                    'a',
+                    { href: '#', className: 'btn-white' },
+                    'Find out more'
+                  )
+                )
               )
             )
           )
@@ -1125,14 +1044,14 @@ var Header = function (_Component) {
     }
   }]);
 
-  return Header;
+  return SixtySeconds;
 }(_react.Component);
 
-exports.default = Header;
+exports.default = SixtySeconds;
 
 /***/ }),
 
-/***/ 98:
+/***/ 54:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1145,7 +1064,7 @@ exports.Footer = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(8);
+var _react = __webpack_require__(7);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -1172,6 +1091,7 @@ var Footer = exports.Footer = function (_Component) {
       return _react2.default.createElement(
         'div',
         null,
+        _react2.default.createElement('p', { className: 'person' }),
         _react2.default.createElement(
           'section',
           { id: 'footer' },
@@ -1370,6 +1290,247 @@ exports.default = Footer;
 
 /***/ }),
 
+/***/ 55:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(7);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Navbar = function (_Component) {
+  _inherits(Navbar, _Component);
+
+  function Navbar() {
+    _classCallCheck(this, Navbar);
+
+    return _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).apply(this, arguments));
+  }
+
+  _createClass(Navbar, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "div",
+        null,
+        _react2.default.createElement(
+          "nav",
+          null,
+          _react2.default.createElement(
+            "div",
+            { className: "nav-wrapper grey darken-3" },
+            _react2.default.createElement(
+              "a",
+              { href: "#", className: "brand-logo" },
+              ' ',
+              "Pocatello Baptist Church",
+              ' '
+            ),
+            _react2.default.createElement(
+              "a",
+              _defineProperty({
+                href: "#",
+                "data-target": "mobile-demo",
+                className: "sidenav-trigger"
+              }, "data-target", "mobile-links"),
+              ' ',
+              _react2.default.createElement(
+                "i",
+                { className: "material-icons" },
+                " menu "
+              )
+            ),
+            _react2.default.createElement(
+              "ul",
+              { className: "right hide-on-med-and-down" },
+              _react2.default.createElement(
+                "li",
+                null,
+                ' ',
+                _react2.default.createElement(
+                  "a",
+                  { href: "sass.html" },
+                  " Home "
+                )
+              ),
+              _react2.default.createElement(
+                "li",
+                null,
+                _react2.default.createElement(
+                  "a",
+                  {
+                    href: "#!",
+                    className: "dropdown-trigger",
+                    "data-target": "dropdown1"
+                  },
+                  ' ',
+                  "About us",
+                  ' ',
+                  _react2.default.createElement(
+                    "i",
+                    { className: "material-icons right" },
+                    "arrow_drop_down"
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                "li",
+                null,
+                ' ',
+                _react2.default.createElement(
+                  "a",
+                  { href: "collapsible.html" },
+                  " Pastors Blog "
+                )
+              ),
+              _react2.default.createElement(
+                "li",
+                null,
+                ' ',
+                _react2.default.createElement(
+                  "a",
+                  { href: "mobile.html" },
+                  " 60 Seconds "
+                )
+              ),
+              _react2.default.createElement(
+                "li",
+                null,
+                ' ',
+                _react2.default.createElement(
+                  "a",
+                  { href: "mobile.html" },
+                  " Mission "
+                )
+              ),
+              _react2.default.createElement(
+                "li",
+                null,
+                ' ',
+                _react2.default.createElement(
+                  "a",
+                  { href: "mobile.html" },
+                  " Contact us "
+                )
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          "ul",
+          { id: "dropdown1", className: "dropdown-content  grey darken-3" },
+          _react2.default.createElement(
+            "li",
+            null,
+            _react2.default.createElement(
+              "a",
+              { href: "#!" },
+              "Doctrinal Statement"
+            )
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            _react2.default.createElement(
+              "a",
+              { href: "#!" },
+              "Our Pastor"
+            )
+          )
+        ),
+        _react2.default.createElement(
+          "ul",
+          { className: "sidenav", id: "mobile-links" },
+          _react2.default.createElement(
+            "li",
+            null,
+            ' ',
+            _react2.default.createElement(
+              "a",
+              { href: "sass.html" },
+              " Home "
+            )
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            ' ',
+            _react2.default.createElement(
+              "a",
+              { href: "about.html" },
+              " About us "
+            )
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            ' ',
+            _react2.default.createElement(
+              "a",
+              { href: "collapsible.html" },
+              " Pastors Blog "
+            )
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            ' ',
+            _react2.default.createElement(
+              "a",
+              { href: "mobile.html" },
+              " 60 Seconds "
+            )
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            ' ',
+            _react2.default.createElement(
+              "a",
+              { href: "mobile.html" },
+              " Mission "
+            )
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            ' ',
+            _react2.default.createElement(
+              "a",
+              { href: "mobile.html" },
+              " Contact us "
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Navbar;
+}(_react.Component);
+
+exports.default = Navbar;
+
+/***/ }),
+
 /***/ 99:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1377,35 +1538,14 @@ exports.default = Footer;
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
-exports.HomeSection = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(8);
+var _react = __webpack_require__(7);
 
 var _react2 = _interopRequireDefault(_react);
-
-var _SermonSection = __webpack_require__(106);
-
-var _SermonSection2 = _interopRequireDefault(_SermonSection);
-
-var _CardSection = __webpack_require__(103);
-
-var _CardSection2 = _interopRequireDefault(_CardSection);
-
-var _Ministries = __webpack_require__(105);
-
-var _Ministries2 = _interopRequireDefault(_Ministries);
-
-var _SixtySeconds = __webpack_require__(107);
-
-var _SixtySeconds2 = _interopRequireDefault(_SixtySeconds);
-
-var _Events = __webpack_require__(104);
-
-var _Events2 = _interopRequireDefault(_Events);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1415,57 +1555,52 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var HomeSection = exports.HomeSection = function (_Component) {
-    _inherits(HomeSection, _Component);
+var Header = function (_Component) {
+  _inherits(Header, _Component);
 
-    function HomeSection() {
-        _classCallCheck(this, HomeSection);
+  function Header() {
+    _classCallCheck(this, Header);
 
-        return _possibleConstructorReturn(this, (HomeSection.__proto__ || Object.getPrototypeOf(HomeSection)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
+  }
+
+  _createClass(Header, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+          'section',
+          { id: 'header-image' },
+          _react2.default.createElement(
+            'div',
+            { className: 'header-title' },
+            _react2.default.createElement(
+              'h1',
+              { className: 'header-h1' },
+              ' Welcome to Pocatello Baptist Church'
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'header-subtitle' },
+              _react2.default.createElement(
+                'a',
+                { className: 'waves-effect waves-light red darken-4 btn-large' },
+                ' Are you searching? '
+              )
+            )
+          )
+        )
+      );
     }
+  }]);
 
-    _createClass(HomeSection, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement(
-                    'section',
-                    { id: 'why-pbc' },
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'greybox' },
-                        _react2.default.createElement(
-                            'h5',
-                            { className: 'sub-title' },
-                            ' why pocatello  baptist '
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'whitebox' },
-                        _react2.default.createElement(
-                            'p',
-                            null,
-                            'Pocatello Baptist Church is a fundamental Independent, Baptist curch that exist to be a sanctuary where God is worshipped, a body where his Word is obeyed, a family where his disciples fellowship and a mission where sinners are converted '
-                        )
-                    )
-                ),
-                _react2.default.createElement(_CardSection2.default, null),
-                _react2.default.createElement(_SermonSection2.default, null),
-                _react2.default.createElement(_Ministries2.default, null),
-                _react2.default.createElement(_SixtySeconds2.default, null),
-                _react2.default.createElement(_Events2.default, null)
-            );
-        }
-    }]);
-
-    return HomeSection;
+  return Header;
 }(_react.Component);
 
-exports.default = HomeSection;
+exports.default = Header;
 
 /***/ })
 
-},[102]);
+},[103]);

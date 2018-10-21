@@ -4,6 +4,7 @@ export class Footer extends Component {
   render() {
     return (
       <div>
+      <p className="person"></p>
         <section id='footer'>
           <footer>
             <div className="container">

@@ -1,6 +1,6 @@
 webpackJsonp([1],{
 
-/***/ 108:
+/***/ 110:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8,8 +8,9 @@ webpackJsonp([1],{
 
 $(document).ready(function () {
   $('.sidenav').sidenav();
+  $('.dropdown-trigger').dropdown();
 });
 
 /***/ })
 
-},[108]);
+},[110]);

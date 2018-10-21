@@ -1,22 +1,14 @@
-import React, { Component } from 'react';
-import Navbar from '../layouts/Navbar';
-import AboutHero from '../hero/AboutHero'
-import Footer from '../layouts/Footer'
+import React, { Component } from 'react'
+import AboutSection from '../layouts/AboutSection'
 
 
 class AboutUs extends Component {
-  render() {
+  render () {
     return (
       <div>
-      <Navbar />
-      <AboutHero/>
-
-      
-      <Footer/>
-
-           
+        <AboutSection/>
       </div>
-    );
+    )
   }
 }
 
