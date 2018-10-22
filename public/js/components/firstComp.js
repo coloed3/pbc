@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 100:
+/***/ 116:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9,33 +9,16 @@ webpackJsonp([0],{
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.HomeSection = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(7);
+var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _SermonSection = __webpack_require__(108);
+var _AboutSection = __webpack_require__(125);
 
-var _SermonSection2 = _interopRequireDefault(_SermonSection);
-
-var _CardSection = __webpack_require__(105);
-
-var _CardSection2 = _interopRequireDefault(_CardSection);
-
-var _Ministries = __webpack_require__(107);
-
-var _Ministries2 = _interopRequireDefault(_Ministries);
-
-var _SixtySeconds = __webpack_require__(109);
-
-var _SixtySeconds2 = _interopRequireDefault(_SixtySeconds);
-
-var _Events = __webpack_require__(106);
-
-var _Events2 = _interopRequireDefault(_Events);
+var _AboutSection2 = _interopRequireDefault(_AboutSection);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -45,60 +28,34 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var HomeSection = exports.HomeSection = function (_Component) {
-  _inherits(HomeSection, _Component);
+var AboutUs = function (_Component) {
+  _inherits(AboutUs, _Component);
 
-  function HomeSection() {
-    _classCallCheck(this, HomeSection);
+  function AboutUs() {
+    _classCallCheck(this, AboutUs);
 
-    return _possibleConstructorReturn(this, (HomeSection.__proto__ || Object.getPrototypeOf(HomeSection)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (AboutUs.__proto__ || Object.getPrototypeOf(AboutUs)).apply(this, arguments));
   }
 
-  _createClass(HomeSection, [{
+  _createClass(AboutUs, [{
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
         'div',
         null,
-        _react2.default.createElement(
-          'section',
-          { id: 'why-pbc' },
-          _react2.default.createElement(
-            'div',
-            { className: 'greybox' },
-            _react2.default.createElement(
-              'h5',
-              { className: 'sub-title' },
-              ' why pocatello  baptist '
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'whitebox' },
-            _react2.default.createElement(
-              'p',
-              null,
-              'Pocatello Baptist Church is a fundamental Independent, Baptist curch that exist to be a sanctuary where God is worshipped, a body where his Word is obeyed, a family where his disciples fellowship and a mission where sinners are converted '
-            )
-          )
-        ),
-        _react2.default.createElement(_CardSection2.default, null),
-        _react2.default.createElement(_SermonSection2.default, null),
-        _react2.default.createElement(_Ministries2.default, null),
-        _react2.default.createElement(_SixtySeconds2.default, null),
-        _react2.default.createElement(_Events2.default, null)
+        _react2.default.createElement(_AboutSection2.default, null)
       );
     }
   }]);
 
-  return HomeSection;
+  return AboutUs;
 }(_react.Component);
 
-exports.default = HomeSection;
+exports.default = AboutUs;
 
 /***/ }),
 
-/***/ 101:
+/***/ 117:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -108,19 +65,19 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(7);
+var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Footer = __webpack_require__(54);
+var _Footer = __webpack_require__(40);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
-var _Navbar = __webpack_require__(55);
+var _Navbar = __webpack_require__(41);
 
 var _Navbar2 = _interopRequireDefault(_Navbar);
 
-var _DocHero = __webpack_require__(104);
+var _DocHero = __webpack_require__(123);
 
 var _DocHero2 = _interopRequireDefault(_DocHero);
 
@@ -140,7 +97,44 @@ exports.default = Doctrinal;
 
 /***/ }),
 
-/***/ 103:
+/***/ 118:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(3);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _HomeSection = __webpack_require__(128);
+
+var _HomeSection2 = _interopRequireDefault(_HomeSection);
+
+var _Header = __webpack_require__(124);
+
+var _Header2 = _interopRequireDefault(_Header);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Home = function Home() {
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(_Header2.default, null),
+    _react2.default.createElement(_HomeSection2.default, null)
+  );
+};
+
+exports.default = Home;
+
+/***/ }),
+
+/***/ 121:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -148,33 +142,35 @@ exports.default = Doctrinal;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(7);
+var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(33);
+var _reactDom = __webpack_require__(42);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _HomeSection = __webpack_require__(100);
-
-var _HomeSection2 = _interopRequireDefault(_HomeSection);
-
-var _Header = __webpack_require__(99);
-
-var _Header2 = _interopRequireDefault(_Header);
-
-var _Navbar = __webpack_require__(55);
+var _Navbar = __webpack_require__(41);
 
 var _Navbar2 = _interopRequireDefault(_Navbar);
 
-var _Footer = __webpack_require__(54);
+var _Footer = __webpack_require__(40);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
-var _Doctrinal = __webpack_require__(101);
+var _Home = __webpack_require__(118);
+
+var _Home2 = _interopRequireDefault(_Home);
+
+var _AboutUs = __webpack_require__(116);
+
+var _AboutUs2 = _interopRequireDefault(_AboutUs);
+
+var _Doctrinal = __webpack_require__(117);
 
 var _Doctrinal2 = _interopRequireDefault(_Doctrinal);
+
+var _reactRouterDom = __webpack_require__(120);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -197,13 +193,21 @@ var Layout = function (_Component) {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
-        'div',
+        _reactRouterDom.BrowserRouter,
         null,
-        _react2.default.createElement(_Navbar2.default, null),
-        _react2.default.createElement(_Header2.default, null),
-        _react2.default.createElement(_HomeSection2.default, null),
-        _react2.default.createElement(_Footer2.default, null),
-        _react2.default.createElement(_Doctrinal2.default, null)
+        _react2.default.createElement(
+          'div',
+          null,
+          _react2.default.createElement(_Navbar2.default, null),
+          _react2.default.createElement(
+            _reactRouterDom.Switch,
+            null,
+            _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _Home2.default, exact: true }),
+            _react2.default.createElement(_reactRouterDom.Route, { path: '/about', component: _AboutUs2.default }),
+            _react2.default.createElement(_reactRouterDom.Route, { path: '/doc', component: _Doctrinal2.default })
+          ),
+          _react2.default.createElement(_Footer2.default, null)
+        )
       );
     }
   }]);
@@ -217,7 +221,62 @@ _reactDom2.default.render(_react2.default.createElement(Layout, null), app);
 
 /***/ }),
 
-/***/ 104:
+/***/ 122:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(3);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var AboutHero = function AboutHero() {
+    return _react2.default.createElement(
+        'div',
+        { className: 'z-depth-5' },
+        _react2.default.createElement(
+            'section',
+            { id: 'aboutHero' },
+            _react2.default.createElement(
+                'div',
+                { className: 'About-image ' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'header-title' },
+                    _react2.default.createElement(
+                        'h1',
+                        { className: 'header-h1' },
+                        'Pastor Brian Griffin ',
+                        _react2.default.createElement('br', null),
+                        ' & Family'
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'header-subtitle' },
+                        _react2.default.createElement(
+                            'h4',
+                            null,
+                            'Our Story'
+                        )
+                    )
+                )
+            )
+        )
+    );
+};
+
+exports.default = AboutHero;
+
+/***/ }),
+
+/***/ 123:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -227,7 +286,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(7);
+var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -266,7 +325,177 @@ exports.default = DocHero;
 
 /***/ }),
 
-/***/ 105:
+/***/ 124:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(3);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Header = function (_Component) {
+  _inherits(Header, _Component);
+
+  function Header() {
+    _classCallCheck(this, Header);
+
+    return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
+  }
+
+  _createClass(Header, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+          'section',
+          { id: 'header-image' },
+          _react2.default.createElement(
+            'div',
+            { className: 'header-title' },
+            _react2.default.createElement(
+              'h1',
+              { className: 'header-h1' },
+              ' Welcome to Pocatello Baptist Church'
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'header-subtitle' },
+              _react2.default.createElement(
+                'a',
+                { className: 'waves-effect waves-light red darken-4 btn-large' },
+                ' Are you searching? '
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Header;
+}(_react.Component);
+
+exports.default = Header;
+
+/***/ }),
+
+/***/ 125:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(3);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _AboutHero = __webpack_require__(122);
+
+var _AboutHero2 = _interopRequireDefault(_AboutHero);
+
+var _Navbar = __webpack_require__(41);
+
+var _Navbar2 = _interopRequireDefault(_Navbar);
+
+var _Footer = __webpack_require__(40);
+
+var _Footer2 = _interopRequireDefault(_Footer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var AboutSection = function AboutSection() {
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(_Navbar2.default, null),
+    _react2.default.createElement(_AboutHero2.default, null),
+    _react2.default.createElement(
+      'section',
+      { id: 'AboutUs' },
+      _react2.default.createElement(
+        'div',
+        { className: 'container' },
+        _react2.default.createElement(
+          'div',
+          { className: 'row' },
+          _react2.default.createElement(
+            'div',
+            { className: 's12 m2' },
+            _react2.default.createElement(
+              'p',
+              { className: 'flow-text' },
+              'Pastor Brian E. Griffin grew up in Pocatello. Although, he did not get saved until December of 1992, while he was a youth living on his own in Las Vegas,Nevada. Shortly after getting saved, the Lord moved Brian back to Pocatello, where he began working for KRTK Radio and started teaching the Word as a youth minister at a local church.'
+            ),
+            _react2.default.createElement(
+              'p',
+              { className: 'flow-text' },
+              'In 1994, Brian met his future bride and ministry partner, Chandra. The two were wed in April of 1995. Brian and Chandra served in various ministries in the churches they were involved with; Brian mostly in teaching roles. Brian and Chandra were blessed by the Lord in 2001 with the birth of their only child, Jadon. In January of 2007, the Griffins began attending Pocatello Baptist Church. Shortly thereafter, they begin serving under Pastor Colan Deatherage. For 7 years Brian served as the Youth minister, and a Deacon for many of those years.'
+            ),
+            _react2.default.createElement(
+              'p',
+              { className: 'flow-text' },
+              'Pocatello Baptist Church called Brian to be their Pastor in August of 2014. Brian and Chandra say: \u201CIt is a great blessing and privilege to minister to and with the amazing church family of Pocatello Baptist Church.\u201D'
+            ),
+            _react2.default.createElement(
+              'p',
+              { className: 'flow-text' },
+              'Pastor Brian is know for his passion for the Word of God, and his love of teaching through clear and challenging exposition of the scriptures while helping other to apply the Lord\u2019s instructions for godly living,'
+            ),
+            _react2.default.createElement(
+              'p',
+              { className: 'flow-text' },
+              'Romans 12:1-2 \u201CI beseech you therefore, brethren, by the mercies of God, that ye present your bodies a living sacrifice, holy, acceptable unto God, which is your reasonable service. (2) And be not conformed to this world: but be ye transformed by the renewing of your mind, that ye may prove what is that good, and acceptable, and perfect, will of God.\u201D'
+            ),
+            _react2.default.createElement(
+              'blockquote',
+              null,
+              'Pastor Brian Griffin',
+              _react2.default.createElement(
+                'p',
+                null,
+                'Pocatello Baptist Church'
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                ' 208-237-4915'
+              )
+            )
+          )
+        )
+      )
+    ),
+    _react2.default.createElement(_Footer2.default, null)
+  );
+};
+
+exports.default = AboutSection;
+
+/***/ }),
+
+/***/ 126:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -279,7 +508,7 @@ exports.CardSection = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(7);
+var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -437,7 +666,7 @@ exports.default = CardSection;
 
 /***/ }),
 
-/***/ 106:
+/***/ 127:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -450,7 +679,7 @@ exports.Events = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(7);
+var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -690,7 +919,105 @@ exports.default = Events;
 
 /***/ }),
 
-/***/ 107:
+/***/ 128:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.HomeSection = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(3);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _SermonSection = __webpack_require__(130);
+
+var _SermonSection2 = _interopRequireDefault(_SermonSection);
+
+var _CardSection = __webpack_require__(126);
+
+var _CardSection2 = _interopRequireDefault(_CardSection);
+
+var _Ministries = __webpack_require__(129);
+
+var _Ministries2 = _interopRequireDefault(_Ministries);
+
+var _SixtySeconds = __webpack_require__(131);
+
+var _SixtySeconds2 = _interopRequireDefault(_SixtySeconds);
+
+var _Events = __webpack_require__(127);
+
+var _Events2 = _interopRequireDefault(_Events);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var HomeSection = exports.HomeSection = function (_Component) {
+  _inherits(HomeSection, _Component);
+
+  function HomeSection() {
+    _classCallCheck(this, HomeSection);
+
+    return _possibleConstructorReturn(this, (HomeSection.__proto__ || Object.getPrototypeOf(HomeSection)).apply(this, arguments));
+  }
+
+  _createClass(HomeSection, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+          'section',
+          { id: 'why-pbc' },
+          _react2.default.createElement(
+            'div',
+            { className: 'greybox' },
+            _react2.default.createElement(
+              'h5',
+              { className: 'sub-title' },
+              ' why pocatello  baptist '
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'whitebox' },
+            _react2.default.createElement(
+              'p',
+              null,
+              'Pocatello Baptist Church is a fundamental Independent, Baptist curch that exist to be a sanctuary where God is worshipped, a body where his Word is obeyed, a family where his disciples fellowship and a mission where sinners are converted '
+            )
+          )
+        ),
+        _react2.default.createElement(_CardSection2.default, null),
+        _react2.default.createElement(_SermonSection2.default, null),
+        _react2.default.createElement(_Ministries2.default, null),
+        _react2.default.createElement(_SixtySeconds2.default, null),
+        _react2.default.createElement(_Events2.default, null)
+      );
+    }
+  }]);
+
+  return HomeSection;
+}(_react.Component);
+
+exports.default = HomeSection;
+
+/***/ }),
+
+/***/ 129:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -703,7 +1030,7 @@ exports.Ministries = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(7);
+var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -846,7 +1173,7 @@ exports.default = Ministries;
 
 /***/ }),
 
-/***/ 108:
+/***/ 130:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -859,7 +1186,7 @@ exports.SermonSection = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(7);
+var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -961,7 +1288,7 @@ exports.default = SermonSection;
 
 /***/ }),
 
-/***/ 109:
+/***/ 131:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -974,7 +1301,7 @@ exports.SixtySeconds = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(7);
+var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -1051,7 +1378,7 @@ exports.default = SixtySeconds;
 
 /***/ }),
 
-/***/ 54:
+/***/ 40:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1064,7 +1391,7 @@ exports.Footer = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(7);
+var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -1290,7 +1617,7 @@ exports.default = Footer;
 
 /***/ }),
 
-/***/ 55:
+/***/ 41:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1302,7 +1629,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(7);
+var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -1529,78 +1856,6 @@ var Navbar = function (_Component) {
 
 exports.default = Navbar;
 
-/***/ }),
-
-/***/ 99:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(7);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Header = function (_Component) {
-  _inherits(Header, _Component);
-
-  function Header() {
-    _classCallCheck(this, Header);
-
-    return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
-  }
-
-  _createClass(Header, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(
-          'section',
-          { id: 'header-image' },
-          _react2.default.createElement(
-            'div',
-            { className: 'header-title' },
-            _react2.default.createElement(
-              'h1',
-              { className: 'header-h1' },
-              ' Welcome to Pocatello Baptist Church'
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'header-subtitle' },
-              _react2.default.createElement(
-                'a',
-                { className: 'waves-effect waves-light red darken-4 btn-large' },
-                ' Are you searching? '
-              )
-            )
-          )
-        )
-      );
-    }
-  }]);
-
-  return Header;
-}(_react.Component);
-
-exports.default = Header;
-
 /***/ })
 
-},[103]);
+},[121]);
