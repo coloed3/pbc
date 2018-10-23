@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 
 class Navbar extends Component {
   render() {
@@ -60,7 +61,7 @@ class Navbar extends Component {
             <a href="#!">Doctrinal Statement</a>
           </li>
           <li>
-            <a href="#!">Our Pastor</a>
+            <Link to="/about">Our Pastor</Link>
           </li>
         </ul>
         <ul className="sidenav" id="mobile-links">

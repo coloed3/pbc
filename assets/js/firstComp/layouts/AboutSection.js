@@ -6,7 +6,6 @@ import Footer from '../layouts/Footer';
 const AboutSection = () => {
   return (
     <div>
-      <Navbar />
       <AboutHero />
       <section id="AboutUs">
         <div className="container">

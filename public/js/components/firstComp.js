@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 116:
+/***/ 117:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55,7 +55,7 @@ exports.default = AboutUs;
 
 /***/ }),
 
-/***/ 117:
+/***/ 118:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -97,7 +97,7 @@ exports.default = Doctrinal;
 
 /***/ }),
 
-/***/ 118:
+/***/ 119:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -158,19 +158,19 @@ var _Footer = __webpack_require__(40);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
-var _Home = __webpack_require__(118);
+var _Home = __webpack_require__(119);
 
 var _Home2 = _interopRequireDefault(_Home);
 
-var _AboutUs = __webpack_require__(116);
+var _AboutUs = __webpack_require__(117);
 
 var _AboutUs2 = _interopRequireDefault(_AboutUs);
 
-var _Doctrinal = __webpack_require__(117);
+var _Doctrinal = __webpack_require__(118);
 
 var _Doctrinal2 = _interopRequireDefault(_Doctrinal);
 
-var _reactRouterDom = __webpack_require__(120);
+var _reactRouterDom = __webpack_require__(67);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -199,13 +199,9 @@ var Layout = function (_Component) {
           'div',
           null,
           _react2.default.createElement(_Navbar2.default, null),
-          _react2.default.createElement(
-            _reactRouterDom.Switch,
-            null,
-            _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _Home2.default, exact: true }),
-            _react2.default.createElement(_reactRouterDom.Route, { path: '/about', component: _AboutUs2.default }),
-            _react2.default.createElement(_reactRouterDom.Route, { path: '/doc', component: _Doctrinal2.default })
-          ),
+          _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _Home2.default, exact: true }),
+          _react2.default.createElement(_reactRouterDom.Route, { path: '/about', component: _AboutUs2.default }),
+          _react2.default.createElement(_reactRouterDom.Route, { path: '/doc', component: _Doctrinal2.default }),
           _react2.default.createElement(_Footer2.default, null)
         )
       );
@@ -429,7 +425,6 @@ var AboutSection = function AboutSection() {
   return _react2.default.createElement(
     'div',
     null,
-    _react2.default.createElement(_Navbar2.default, null),
     _react2.default.createElement(_AboutHero2.default, null),
     _react2.default.createElement(
       'section',
@@ -1633,6 +1628,8 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactRouterDom = __webpack_require__(67);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -1653,197 +1650,197 @@ var Navbar = function (_Component) {
   }
 
   _createClass(Navbar, [{
-    key: "render",
+    key: 'render',
     value: function render() {
       return _react2.default.createElement(
-        "div",
+        'div',
         null,
         _react2.default.createElement(
-          "nav",
+          'nav',
           null,
           _react2.default.createElement(
-            "div",
-            { className: "nav-wrapper grey darken-3" },
+            'div',
+            { className: 'nav-wrapper grey darken-3' },
             _react2.default.createElement(
-              "a",
-              { href: "#", className: "brand-logo" },
+              'a',
+              { href: '#', className: 'brand-logo' },
               ' ',
-              "Pocatello Baptist Church",
+              'Pocatello Baptist Church',
               ' '
             ),
             _react2.default.createElement(
-              "a",
+              'a',
               _defineProperty({
-                href: "#",
-                "data-target": "mobile-demo",
-                className: "sidenav-trigger"
-              }, "data-target", "mobile-links"),
+                href: '#',
+                'data-target': 'mobile-demo',
+                className: 'sidenav-trigger'
+              }, 'data-target', 'mobile-links'),
               ' ',
               _react2.default.createElement(
-                "i",
-                { className: "material-icons" },
-                " menu "
+                'i',
+                { className: 'material-icons' },
+                ' menu '
               )
             ),
             _react2.default.createElement(
-              "ul",
-              { className: "right hide-on-med-and-down" },
+              'ul',
+              { className: 'right hide-on-med-and-down' },
               _react2.default.createElement(
-                "li",
+                'li',
                 null,
                 ' ',
                 _react2.default.createElement(
-                  "a",
-                  { href: "sass.html" },
-                  " Home "
+                  'a',
+                  { href: 'sass.html' },
+                  ' Home '
                 )
               ),
               _react2.default.createElement(
-                "li",
+                'li',
                 null,
                 _react2.default.createElement(
-                  "a",
+                  'a',
                   {
-                    href: "#!",
-                    className: "dropdown-trigger",
-                    "data-target": "dropdown1"
+                    href: '#!',
+                    className: 'dropdown-trigger',
+                    'data-target': 'dropdown1'
                   },
                   ' ',
-                  "About us",
+                  'About us',
                   ' ',
                   _react2.default.createElement(
-                    "i",
-                    { className: "material-icons right" },
-                    "arrow_drop_down"
+                    'i',
+                    { className: 'material-icons right' },
+                    'arrow_drop_down'
                   )
                 )
               ),
               _react2.default.createElement(
-                "li",
+                'li',
                 null,
                 ' ',
                 _react2.default.createElement(
-                  "a",
-                  { href: "collapsible.html" },
-                  " Pastors Blog "
+                  'a',
+                  { href: 'collapsible.html' },
+                  ' Pastors Blog '
                 )
               ),
               _react2.default.createElement(
-                "li",
+                'li',
                 null,
                 ' ',
                 _react2.default.createElement(
-                  "a",
-                  { href: "mobile.html" },
-                  " 60 Seconds "
+                  'a',
+                  { href: 'mobile.html' },
+                  ' 60 Seconds '
                 )
               ),
               _react2.default.createElement(
-                "li",
+                'li',
                 null,
                 ' ',
                 _react2.default.createElement(
-                  "a",
-                  { href: "mobile.html" },
-                  " Mission "
+                  'a',
+                  { href: 'mobile.html' },
+                  ' Mission '
                 )
               ),
               _react2.default.createElement(
-                "li",
+                'li',
                 null,
                 ' ',
                 _react2.default.createElement(
-                  "a",
-                  { href: "mobile.html" },
-                  " Contact us "
+                  'a',
+                  { href: 'mobile.html' },
+                  ' Contact us '
                 )
               )
             )
           )
         ),
         _react2.default.createElement(
-          "ul",
-          { id: "dropdown1", className: "dropdown-content  grey darken-3" },
+          'ul',
+          { id: 'dropdown1', className: 'dropdown-content  grey darken-3' },
           _react2.default.createElement(
-            "li",
+            'li',
             null,
             _react2.default.createElement(
-              "a",
-              { href: "#!" },
-              "Doctrinal Statement"
+              'a',
+              { href: '#!' },
+              'Doctrinal Statement'
             )
           ),
           _react2.default.createElement(
-            "li",
+            'li',
             null,
             _react2.default.createElement(
-              "a",
-              { href: "#!" },
-              "Our Pastor"
+              _reactRouterDom.Link,
+              { to: '/about' },
+              'Our Pastor'
             )
           )
         ),
         _react2.default.createElement(
-          "ul",
-          { className: "sidenav", id: "mobile-links" },
+          'ul',
+          { className: 'sidenav', id: 'mobile-links' },
           _react2.default.createElement(
-            "li",
+            'li',
             null,
             ' ',
             _react2.default.createElement(
-              "a",
-              { href: "sass.html" },
-              " Home "
+              'a',
+              { href: 'sass.html' },
+              ' Home '
             )
           ),
           _react2.default.createElement(
-            "li",
+            'li',
             null,
             ' ',
             _react2.default.createElement(
-              "a",
-              { href: "about.html" },
-              " About us "
+              'a',
+              { href: 'about.html' },
+              ' About us '
             )
           ),
           _react2.default.createElement(
-            "li",
+            'li',
             null,
             ' ',
             _react2.default.createElement(
-              "a",
-              { href: "collapsible.html" },
-              " Pastors Blog "
+              'a',
+              { href: 'collapsible.html' },
+              ' Pastors Blog '
             )
           ),
           _react2.default.createElement(
-            "li",
+            'li',
             null,
             ' ',
             _react2.default.createElement(
-              "a",
-              { href: "mobile.html" },
-              " 60 Seconds "
+              'a',
+              { href: 'mobile.html' },
+              ' 60 Seconds '
             )
           ),
           _react2.default.createElement(
-            "li",
+            'li',
             null,
             ' ',
             _react2.default.createElement(
-              "a",
-              { href: "mobile.html" },
-              " Mission "
+              'a',
+              { href: 'mobile.html' },
+              ' Mission '
             )
           ),
           _react2.default.createElement(
-            "li",
+            'li',
             null,
             ' ',
             _react2.default.createElement(
-              "a",
-              { href: "mobile.html" },
-              " Contact us "
+              'a',
+              { href: 'mobile.html' },
+              ' Contact us '
             )
           )
         )
